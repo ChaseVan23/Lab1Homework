@@ -19,10 +19,10 @@ public class CookieCounter
         System.out.println("Please enter the the number of cookies eaten: ");
         
         //assign the variable n
-        int n = keyboard.nextInt();
+        int numberOfCookies = keyboard.nextInt();
         
         //print results
-        System.out.println("The amount of calories eaten was: " + (75*n) + " calories.");
+        System.out.println("The amount of calories eaten was: " + (75*numberOfCookies) + " calories.");
         
         
     }
