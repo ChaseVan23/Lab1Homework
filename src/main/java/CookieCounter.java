@@ -22,8 +22,6 @@ public class CookieCounter
         int numberOfCookies = keyboard.nextInt();
         
         //print results
-        System.out.println("The amount of calories eaten was: " + (75*numberOfCookies) + " calories.");
-        
-        
+        System.out.println("The amount of calories eaten was: " + (75*numberOfCookies) + " calories.");          
     }
 }

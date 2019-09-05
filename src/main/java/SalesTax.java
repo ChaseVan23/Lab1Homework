@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.Scanner
+import java.util.Scanner;
 /**
  *
  * @author chase
@@ -28,7 +28,7 @@ public class SalesTax
         
         //get the purchase amount
         System.out.println("Please enter the purchase amount: ");
-        purchase = (float) keyboard.nextDouble();
+        purchase = keyboard.nextFloat();
         
         //calculate the state sales tax
         stateTax = purchase * STATE_RATE;
