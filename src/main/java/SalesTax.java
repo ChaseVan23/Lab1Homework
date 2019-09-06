@@ -47,7 +47,7 @@ public class SalesTax
         System.out.println("State Tax is: $ " + stateTax);
         System.out.println("CountyTax is: $ " + countyTax);
         System.out.println("Total tax is: $ " + totalTax);
-        System.out.println("Total Cost is: $ " + totalTax);
+        System.out.println("Total Cost is: $ " + totalCost);
         
     }
 }
