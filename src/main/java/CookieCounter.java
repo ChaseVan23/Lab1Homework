@@ -13,12 +13,12 @@ public class CookieCounter
     public static void main(String[] args) 
     {
         int totalCaloriesPerCookie;
-        int serving = 300;
+        int caloriesPerServing = 300;
         int numberOfServings = 10;
         int totalNumberOfCookies = 40;
         
         //calculates total calories per cookie
-        totalCaloriesPerCookie = (serving * numberOfServings)/ totalNumberOfCookies;
+        totalCaloriesPerCookie = (caloriesPerServing * numberOfServings)/ totalNumberOfCookies;
         
         //create scanner for user input
         Scanner keyboard = new Scanner(System.in);
