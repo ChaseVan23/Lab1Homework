@@ -12,24 +12,23 @@ public class CookieCounter
 {
     public static void main(String[] args) 
     {
-        int totalCaloriesPerCookie;
-        int caloriesPerServing = 300;
-        int numberOfServings = 10;
-        int totalNumberOfCookies = 40;
-        
-        //calculates total calories per cookie
-        totalCaloriesPerCookie = (caloriesPerServing * numberOfServings)/ totalNumberOfCookies;
-        
+        float totalCaloriesPerCookie;
+        float caloriesPerServing = 300;
+        float numberOfServings = 10;
+        float totalNumberOfCookies = 40;
+        float numberOfCookies;
+               
         //create scanner for user input
         Scanner keyboard = new Scanner(System.in);
         
         //asks for users input
         System.out.println("Please enter the the number of cookies eaten: ");
         
-        //assign the variable n
-        int numberOfCookies = keyboard.nextInt();
+        //assign input to variable
+        numberOfCookies = keyboard.nextInt();
         
         //multiplies the amount of cookies by the total number of calories per cookie
+        totalCaloriesPerCookie = (caloriesPerServing * numberOfServings)/ totalNumberOfCookies;
         numberOfCookies = numberOfCookies * totalCaloriesPerCookie;
         
         //print results
