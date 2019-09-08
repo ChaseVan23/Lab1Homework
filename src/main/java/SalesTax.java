@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.text.NumberFormat;
 import java.util.Scanner;
 /**
  *
@@ -22,6 +23,8 @@ public class SalesTax
         float countyTax;
         float totalTax;
         float totalCost;
+        NumberFormat numberFormat = NumberFormat.getInstance();
+        numberFormat.setMinimumFractionDigits(2);
         
         //scanner for users input
         Scanner keyboard = new Scanner(System.in);
@@ -43,11 +46,11 @@ public class SalesTax
         totalCost = purchase + totalTax;
         
         //displaying results of the calculations
-        System.out.println("Purchase amount is: $ " + purchase);
-        System.out.println("State Tax is: $ " + stateTax);
-        System.out.println("CountyTax is: $ " + countyTax);
-        System.out.println("Total tax is: $ " + totalTax);
-        System.out.println("Total Cost is: $ " + totalCost);
+        System.out.println("Purchase amount is: $ " + (numberFormat.format(purchase)));
+        System.out.println("State Tax is: $ " + (numberFormat.format(stateTax)));
+        System.out.println("CountyTax is: $ " + (numberFormat.format(countyTax)));
+        System.out.println("Total tax is: $ " + (numberFormat.format(totalTax)));
+        System.out.println("Total Cost is: $ " + (numberFormat.format(totalCost)));
         
     }
 }
